@@ -42,12 +42,11 @@ for (let i=0; i< members.length; i++){
         <h4>${teamMembers.name}</h4>
         <p>${teamMembers.role}</p>
         <p>${teamMembers.image}</p>
+        <p>${addImage}</p>
     </li>
     `;
     document.getElementById("team-members").innerHTML += listMembers
-   
 }
-
 
 function addImage(){
     const addImage = document.getElementById("img"); 
