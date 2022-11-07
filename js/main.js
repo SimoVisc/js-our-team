@@ -45,4 +45,11 @@ for (let i=0; i< members.length; i++){
     </li>
     `;
     document.getElementById("team-members").innerHTML += listMembers
+   
 }
+
+
+function addImage(){
+    const addImage = document.getElementById("img"); 
+    addImage.innerHTML = `<img id="img" src="img/wayne-barnett-founder-ceo.jpg">`;
+  }
