@@ -39,16 +39,11 @@ for (let i=0; i< members.length; i++){
     const teamMembers = members[i];
     const  listMembers = `
     <li>
-        <h4>${teamMembers.name}</h4>
-        <p>${teamMembers.role}</p>
-        <p>${teamMembers.image}</p>
-        <p>${addImage}</p>
+        <h4>Name: ${teamMembers.name}</h4>
+        <p> Ruolo: ${teamMembers.role}</p>
+        <p><img src="img/${teamMembers.image}"></p>
     </li>
     `;
     document.getElementById("team-members").innerHTML += listMembers
 }
 
-function addImage(){
-    const addImage = document.getElementById("img"); 
-    addImage.innerHTML = `<img id="img" src="img/wayne-barnett-founder-ceo.jpg">`;
-  }
